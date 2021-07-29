@@ -9,5 +9,4 @@ public class CovAidAppApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CovAidAppApplication.class, args);
 	}
-
 }

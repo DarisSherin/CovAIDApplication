@@ -43,7 +43,7 @@ public class CovAIDController {
 	}
     }
     }
-		return "request";
+		return "volunteer";
 		
 		}
 	
@@ -72,14 +72,14 @@ public class CovAIDController {
     }
 	
 	@RequestMapping(value = "/requestSubmit", method = RequestMethod.POST)
-	public String requestSubmit(@ModelAttribute("request") User requestOGJ) {
-		covAIDAppService.save(requestOGJ);
+	public String requestSubmit(@ModelAttribute("request") Request requestObj) {
+		covAIDAppService.save(requestObj);
 		return "sucessrequest";
 	}
 	
 	@RequestMapping(value = "/volunteer")
 	public ModelAndView get() {
-		ModelAndView mav = new ModelAndView("employeesList");
+		ModelAndView mav = new ModelAndView("volunteer");
 		List<Request> list = covAIDAppService.get();
 		mav.addObject("list", list);
 		return mav;

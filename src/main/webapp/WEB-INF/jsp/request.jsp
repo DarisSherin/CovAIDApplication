@@ -56,7 +56,7 @@ font-size:30px;
 		<input type="text"  name="name" placeholder="Name"> <br><br>
 		<input type="text"  name="location" placeholder="location"> <br><br>
 		<input type="text"  name="phone" placeholder="phone-number"><br><br>
-		<input type="text"  name="listOfItems" placeholder="list your requirements"><br><br>
+		<input type="text"  name="item" placeholder="list your requirements"><br><br>
 				<button type = "submit" >Request</button>
 							</form>
 </body>

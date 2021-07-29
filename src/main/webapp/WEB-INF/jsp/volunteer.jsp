@@ -64,7 +64,7 @@ font-size:30px;
 				<td>${r.name}</td>
 				<td>${r.location}</td>
 				<td>${r.phone}</td>
-				<td>${r.listOfItems}</td>
+				<td>${r.item}</td>
 				<td>
 					<a href = "${pageContext.request.contextPath}/delete/${r.reqid}">Delete</a>
 				</td>

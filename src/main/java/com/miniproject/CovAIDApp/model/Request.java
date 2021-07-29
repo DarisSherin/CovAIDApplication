@@ -8,7 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 
 @Entity
-@Table(name = "request_listItem")
+@Table(name = "request_item")
 public class Request {
 		
 		@Id
@@ -20,9 +20,9 @@ public class Request {
 		@Column
 		private String location;
 		@Column
-		private int phone;
+		private String phone;
 		@Column
-		private String listOfItems;
+		private String item;
 		
 		
 		public int getReqid() {
@@ -43,22 +43,22 @@ public class Request {
 		public void setLocation(String location) {
 			this.location = location;
 		}
-		public int getPhone() {
+		public String getPhone() {
 			return phone;
 		}
-		public void setPhone(int phone) {
+		public void setPhone(String phone) {
 			this.phone = phone;
 		}
-		public String getListOfItems() {
-			return listOfItems;
+		public String getItem() {
+			return item;
 		}
-		public void setListOfItems(String listOfItems) {
-			this.listOfItems = listOfItems;
+		public void setItem(String item) {
+			this.item = item;
 		}
 		@Override
 		public String toString() {
 			return "Request [reqid=" + reqid + ", name=" + name + ", location=" + location + ", phone=" + phone
-					+ ", listOfItems=" + listOfItems + "]";
+					+ ", item=" + item + "]";
 		}
 		
 }
